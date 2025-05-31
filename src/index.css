@@ -1,0 +1,146 @@
+/* Global styles for The Sport Spot website */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Custom color variables - Light Theme */
+  --color-primary: #6b46c1; /* Purple */
+  --color-secondary: #2563eb; /* Royal Blue */
+  --color-dark: #111827; /* Near Black */
+  --color-light: #f9fafb; /* Near White */
+  --color-background: #ffffff;
+  --color-text: #111827;
+  --color-card-bg: #ffffff;
+  --color-card-border: #e5e7eb;
+}
+
+/* Dark Theme Variables */
+.dark-mode {
+  --color-primary: #9f7aea; /* Lighter Purple for dark mode */
+  --color-secondary: #4f8bf9; /* Lighter Blue for dark mode */
+  --color-dark: #f9fafb; /* White for dark mode */
+  --color-light: #111827; /* Dark for dark mode */
+  --color-background: #121212; /* Dark background */
+  --color-text: #f3f4f6; /* Light text */
+  --color-card-bg: #1e1e1e; /* Dark card background */
+  --color-card-border: #2d2d2d; /* Dark card border */
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme-specific styles */
+.light-theme {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.dark-theme {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Section styles */
+section {
+  scroll-margin-top: 4rem;
+}
+
+/* Animation for hover effects */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Custom utility classes */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Focus styles for accessibility */
+:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-card-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* Dark mode specific overrides */
+.dark-theme .bg-white {
+  background-color: var(--color-card-bg);
+}
+
+.dark-theme .text-gray-800 {
+  color: var(--color-text);
+}
+
+.dark-theme .text-gray-700 {
+  color: var(--color-text);
+}
+
+.dark-theme .text-gray-600 {
+  color: #a1a1aa;
+}
+
+.dark-theme .border-gray-100 {
+  border-color: var(--color-card-border);
+}
+
+.dark-theme .bg-gray-50 {
+  background-color: #1a1a1a;
+}
+
+/* Theme transition */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
