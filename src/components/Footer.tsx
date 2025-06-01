@@ -37,8 +37,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and description */}
           <div>
-            <h2 className="text-2xl font-bold mb-4">
-              <span className="text-purple-400">The</span> <span className="text-blue-400">Sport</span> <span className="text-white">Spot</span>
+            <h2 className="text-2xl font-bold mb-4 site-title">
+              <span className="text-white">The Sport Spot</span>
             </h2>
             <p className="text-gray-400 mb-6">
               Your one-stop destination for quality sportswear and equipment to support your fitness journey.
