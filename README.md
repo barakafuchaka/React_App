@@ -70,7 +70,7 @@ sport-spot/
 #Deployment
 You can deploy this app on:
 
-VercelURL : https://react-app-y3vt-1zfjnzh9z-barakafuchakas-projects.vercel.app
+VercelURL : https://react-app-y3vt-git-main-barakafuchakas-projects.vercel.app
 
 #Contributions
 We welcome contributions! If you’d like to add a new feature or fix a bug, feel free to fork the repo and submit a pull request.
