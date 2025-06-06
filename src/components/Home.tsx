@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import slide1 from '../assets/images/slide1.jpg';
-import slide2 from '../assets/images/slide2.jpg';
-import slide3 from '../assets/images/slide3.jpg';
+import slide1 from 'slides/slide1.jpg'; // Importing the slide image
 
 /**
  * Home Component
@@ -15,8 +13,7 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   // Array of slide images
-  const slides = [slide1, slide2, slide3];
-  
+  const slides = [slide1];  
   // Effect to handle automatic slideshow transitions
   useEffect(() => {
     // Set up interval to change slides every 15 seconds
